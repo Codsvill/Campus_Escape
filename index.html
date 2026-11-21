@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#14251f" />
+    <title>Campus Escape</title>
+    <meta
+      name="description"
+      content="An after-hours campus adventure. Find three keys, avoid the guards, and make it home."
+    />
+    <script type="module" crossorigin src="./assets/index-jfOC2GVu.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BQ6XeYtA.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./"
+        ><span class="brand-icon">CE</span> CAMPUS ESCAPE</a
+      ><span class="edition">AFTER HOURS · A CAMPUS ADVENTURE</span
+      ><button id="help-button" class="quiet">How to play ↗</button>
+    </header>
+    <main>
+      <div class="heading">
+        <div>
+          <div class="eyebrow">LIGHTS OUT. GAME ON.</div>
+          <h1>Your last class? <em>Escape.</em></h1>
+          <p>Three campuses. Find your way home.</p>
+        </div>
+        <span class="night"><i></i> CAMPUS CLOSED <span>21:00</span></span>
+      </div>
+      <div class="game-layout">
+        <section class="game-panel" aria-label="Campus game">
+          <div class="hud">
+            <div>
+              <span>HEALTH</span
+              ><strong id="health">100 <small>HP</small></strong>
+              <div class="health-track"><i id="health-bar"></i></div>
+            </div>
+            <div>
+              <span id="level-name">LEVEL 1 · EASY</span
+              ><strong id="timer">05:00</strong>
+            </div>
+            <div>
+              <span>KEYS FOUND</span
+              ><strong id="keys">0 <small>/ 3</small></strong>
+            </div>
+            <div><span>SCORE</span><strong id="score">000</strong></div>
+            <button
+              id="pause-button"
+              class="pause"
+              aria-label="Pause game"
+              disabled
+            >
+              Ⅱ
+            </button>
+          </div>
+          <div class="canvas-wrap">
+            <canvas
+              id="campus"
+              width="960"
+              height="640"
+              aria-label="Campus map. Move using WASD or arrow keys; Escape pauses."
+            ></canvas>
+            <div id="overlay" class="overlay"></div>
+          </div>
+          <div class="game-footer">
+            <span
+              ><i class="status-dot"></i>
+              <span id="status">Ready when you are.</span></span
+            ><span
+              >W A S D <b>MOVE</b> <span class="divider">/</span> ESC
+              <b>PAUSE</b></span
+            >
+          </div>
+        </section>
+        <aside>
+          <div class="mission">
+            <div class="eyebrow">THE MISSION <span>01 — 03</span></div>
+            <h2>Make it home.</h2>
+            <p>
+              The gates are locked and the guards are on patrol. Your way out
+              starts here.
+            </p>
+            <ol>
+              <li>
+                <span>01</span>
+                <div>
+                  <h3>Find the three keys</h3>
+                  <p>Explore classrooms and hallways.</p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <h3>Stay out of trouble</h3>
+                  <p>Keep your distance from security.</p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <h3>Reach the main gate</h3>
+                  <p>All keys collected? Head to the exit.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="legend">
+            <div class="eyebrow">KNOW YOUR CAMPUS</div>
+            <div>
+              <span class="symbol player">●</span> You
+              <span class="symbol guard">●</span> Security
+            </div>
+            <div>
+              <span class="symbol key">⚿</span> Key
+              <span class="symbol coin">●</span> Coin <small>+10</small>
+            </div>
+            <div>
+              <span class="symbol pack">✚</span> Health pack
+              <small>+25 HP</small>
+            </div>
+            <div>
+              <span class="symbol">»</span> Speed boost <small>6 SEC</small>
+            </div>
+          </div>
+          <div class="tip">
+            <span>↳ A LITTLE HEAD START</span>
+            <p>
+              Guards chase when you get close. Put a wall between you and them.
+            </p>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <span>A small campus. A great escape.</span
+        ><span>BUILT WITH TYPESCRIPT + A LITTLE COURAGE</span>
+      </footer>
+    </main>
+  </body>
+</html>
