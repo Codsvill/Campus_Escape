@@ -1,1 +1,805 @@
-@import"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap";:root{font-family:DM Sans,sans-serif;color:#e7eadd;background:#14251f;font-synthesis:none;color-scheme:dark}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer;border:1px solid #53604c;background:#2c3d31;color:#e7eadd;border-radius:5px;padding:11px 16px;transition:background .15s}button:hover{background:#43533c}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #d1e6a0;outline-offset:4px}button:disabled{opacity:.4;cursor:default}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #324036;padding:0 5%}.brand{display:flex;gap:13px;align-items:center;text-decoration:none;color:#edf0df;font:700 15px Space Grotesk,sans-serif;letter-spacing:1.3px}.brand-icon{display:grid;place-items:center;width:35px;height:35px;background:#cee49e;color:#26372a;border-radius:5px;font-size:13px;letter-spacing:-1px}.edition{color:#8c9c8b;font-size:10px;letter-spacing:2px}.quiet{border:0;background:transparent;font-size:12px}main{max-width:1390px;margin:auto;padding:44px 5% 0}.heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:31px}.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:700;color:#b5c99c}h1{font:500 clamp(27px,3vw,42px) "Space Grotesk",sans-serif;letter-spacing:-1.7px;margin:10px 0}h1 em{font-style:normal;color:#cce39e}.heading p{font-size:13px;color:#9dac9c;margin:0}.night{border:1px solid #3b493b;border-radius:25px;padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:1px;color:#c4cbb7}.night span{color:#849683;border-left:1px solid #45513e;padding-left:10px}.night i,.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c6dc8e}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:26px}.game-panel{border:1px solid #4a5842;border-radius:9px;overflow:hidden;background:#1e3026}.hud{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr auto;gap:20px;align-items:center;padding:20px 25px;background:#203229}.hud>div>span{display:block;color:#a1af95;font-size:9px;letter-spacing:1.5px;margin-bottom:5px}.hud strong{font:500 25px Space Grotesk,sans-serif}.hud small{font-size:13px;color:#8e9f86}.health-track{height:3px;width:90px;background:#48543d;margin-top:5px}.health-track i{display:block;height:100%;background:#c6df8c}.pause{font-size:19px;padding:7px 13px}.canvas-wrap{position:relative}canvas{display:block;width:100%;image-rendering:pixelated}.overlay{position:absolute;inset:0;background:#11261dd9;display:flex;align-items:center;justify-content:center;padding:15px;overflow:auto}.overlay[hidden]{display:none}.menu-card{width:410px;max-width:100%;text-align:center}.badge{font:600 9px Space Grotesk,sans-serif;letter-spacing:2px;color:#bdcf9e}.menu-mark{margin:18px auto 12px;border:1px solid #65754c;background:#3e5134;color:#d4eaa9;width:44px;height:44px;font-size:32px;border-radius:9px}.menu-card h2{font:600 clamp(28px,4vw,48px)/1.05 "Space Grotesk",sans-serif;letter-spacing:-1.8px;margin:14px 0}.menu-card h2 em{font-style:normal;color:#d3e9a5}.menu-card p{font-size:12px;line-height:1.7;color:#acbba2}.menu-card>button{display:block;width:100%;margin:8px 0}.primary{background:#cce39e;color:#213224;border:1px solid #cce39e;font-weight:700}.primary:hover{background:#e0efbe}.primary span{float:right}.menu-card>.primary{max-width:290px;margin:20px auto 8px}.menu-links{display:flex;justify-content:center;gap:12px}.menu-links button{background:transparent;border:0;font-size:12px;padding:12px}.menu-card>small{display:block;margin-top:19px;font-size:8px;color:#7e9378;letter-spacing:1.7px}.game-footer{display:flex;justify-content:space-between;gap:12px;padding:14px 20px;font-size:10px;color:#b0bea1;min-height:43px}.game-footer>span:first-child{display:flex;gap:8px;align-items:center}.game-footer>span:last-child{white-space:nowrap;font-size:9px}.game-footer b{font-size:8px;color:#7f9379;margin-left:4px;font-weight:400}.divider{margin:0 8px;color:#566a50}.mission{padding:21px 0 0}.mission .eyebrow{display:flex;justify-content:space-between}.mission .eyebrow span{font-weight:400;color:#71856e;letter-spacing:0}.mission h2{font:500 27px Space Grotesk,sans-serif;margin:18px 0 10px;letter-spacing:-1px}.mission>p,.tip p{color:#97a88e;font-size:12px;line-height:1.8}.mission ol{padding:0;list-style:none;margin:25px 0 27px}.mission li{display:flex;gap:12px;margin:22px 0}.mission li>span{border:1px solid #48563c;border-radius:50%;width:26px;height:26px;flex-shrink:0;text-align:center;line-height:25px;font-size:9px;color:#c3d69c}.mission h3{font-size:12px;margin:2px 0 5px;font-weight:500}.mission li p{font-size:11px;color:#91a285;line-height:1.6;margin:0}.legend{border-top:1px solid #3c4b36;padding:23px 0}.legend .eyebrow{margin-bottom:18px;font-size:9px;color:#83977a}.legend>div:not(:first-child){display:flex;gap:10px;align-items:center;margin:14px 0;font-size:11px;color:#acbba0}.symbol{font-size:17px}.symbol.guard{color:#c78c73;margin-left:22px}.symbol.player{color:#d2e8a4}.symbol.key,.symbol.coin{color:#e0bc64}.symbol.coin{margin-left:18px}.symbol.pack{color:#c7dab3}.legend small{margin-left:auto;color:#73876d;font-size:9px}.tip{padding:16px;background:#203329;border-left:2px solid #98b775}.tip>span{font-size:8px;letter-spacing:1px;color:#c3d89f}.tip p{font-size:11px;margin:8px 0 0}footer{display:flex;justify-content:space-between;color:#71866d;font-size:10px;border-top:1px solid #30432f;margin-top:30px;padding:20px 0}footer>span:last-child{font-size:8px;letter-spacing:1px}.instructions{text-align:left}.instructions p{margin:8px 0}.final-score{font:500 36px Space Grotesk,sans-serif;color:#d1e6a0;margin:15px}.final-score small{display:block;font-size:9px;letter-spacing:2px;color:#9dab8d;margin:5px}label{font-size:11px;color:#afbe9f}.save-row{display:flex;gap:8px;margin:9px 0}.save-row input{flex:1;min-width:0}input{background:#20362a;color:#e5edd8;border:1px solid #657459;border-radius:4px;padding:10px;width:100%}.records{max-height:230px;overflow:auto;font-size:12px;text-align:left}.record-row{display:grid;grid-template-columns:1fr auto auto;gap:6px;border-bottom:1px solid #42543d;padding:10px 0;align-items:center}.record-row input{grid-column:1/3}.record-row span{grid-column:1;font-size:10px;color:#b9cca5}.record-row button{padding:6px;font-size:10px}.record-row button[type=submit]{grid-column:3;grid-row:1}.record-row button[type=button]{grid-column:3;grid-row:2}@media(min-width:1400px){main{padding-top:48px}}@media(max-width:1000px){.game-layout{grid-template-columns:minmax(0,1fr)}aside{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}.tip{display:none}.mission{padding-top:0}.mission ol{display:flex;gap:15px}.mission li{margin:8px 0}.mission li>span{display:none}.legend{border:0;padding-top:0}.edition{display:none}.menu-card{width:360px}}@media(max-width:600px){main{padding:24px 12px 0}.topbar{padding:0 15px;height:64px}.brand{font-size:12px}.night{display:none}.hud{padding:12px;gap:10px}.hud strong{font-size:20px}.hud>div>span{font-size:7px}.health-track{width:60px}.game-footer>span:last-child{display:none}.canvas-wrap{min-height:420px;background:#23392f}.canvas-wrap canvas{position:absolute;top:50%;transform:translateY(-50%)}.overlay{padding:15px}.menu-card h2{font-size:34px}.menu-mark{margin:10px auto}.menu-card>small{margin-top:8px}aside{display:block}.mission ol{display:block}.legend{display:none}footer>span:last-child{display:none}}.account-form{display:grid;gap:10px;text-align:left}.account-form button{margin-top:8px}.menu-card select{width:100%;background:#20362a;color:#e5edd8;border:1px solid #657459;border-radius:4px;padding:10px;margin:8px 0}.dashboard-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:14px 0}.history-row{padding:10px 0;border-bottom:1px solid #42543d;text-align:left}.history-row p{overflow-wrap:anywhere;margin:4px 0}.history-row button{padding:6px 10px;font-size:11px}.history-row select{max-width:180px}.menu-card:has(.records),.menu-card:has(.account-form){width:520px}.overlay{align-items:safe center}.menu-card{max-height:100%;overflow:auto;padding:10px}.menu-card [hidden]{display:none!important}#panel-status,#save-status{overflow-wrap:anywhere}#stats{margin-bottom:12px}
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap";
+
+:root {
+  font-family: DM Sans, sans-serif;
+  color: #e7eadd;
+  background: #14251f;
+  font-synthesis: none;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #53604c;
+  background: #2c3d31;
+  color: #e7eadd;
+  border-radius: 5px;
+  padding: 11px 16px;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #43533c;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #d1e6a0;
+  outline-offset: 4px;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.topbar {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #324036;
+  padding: 0 5%;
+}
+
+.brand {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  text-decoration: none;
+  color: #edf0df;
+  font: 700 15px Space Grotesk, sans-serif;
+  letter-spacing: 1.3px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  background: #cee49e;
+  color: #26372a;
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: -1px;
+}
+
+.edition {
+  color: #8c9c8b;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.quiet {
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+}
+
+main {
+  max-width: 1390px;
+  margin: auto;
+  padding: 44px 5% 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  font-weight: 700;
+  color: #b5c99c;
+}
+
+h1 {
+  font: 500 clamp(27px, 3vw, 42px) "Space Grotesk", sans-serif;
+  letter-spacing: -1.7px;
+  margin: 10px 0;
+}
+
+h1 em {
+  font-style: normal;
+  color: #cce39e;
+}
+
+.heading p {
+  font-size: 13px;
+  color: #9dac9c;
+  margin: 0;
+}
+
+.night {
+  border: 1px solid #3b493b;
+  border-radius: 25px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #c4cbb7;
+}
+
+.night span {
+  color: #849683;
+  border-left: 1px solid #45513e;
+  padding-left: 10px;
+}
+
+.night i,
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c6dc8e;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 26px;
+}
+
+.game-panel {
+  border: 1px solid #4a5842;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #1e3026;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 25px;
+  background: #203229;
+}
+
+.hud > div > span {
+  display: block;
+  color: #a1af95;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+}
+
+.hud strong {
+  font: 500 25px Space Grotesk, sans-serif;
+}
+
+.hud small {
+  font-size: 13px;
+  color: #8e9f86;
+}
+
+.health-track {
+  height: 3px;
+  width: 90px;
+  background: #48543d;
+  margin-top: 5px;
+}
+
+.health-track i {
+  display: block;
+  height: 100%;
+  background: #c6df8c;
+}
+
+.pause {
+  font-size: 19px;
+  padding: 7px 13px;
+}
+
+.canvas-wrap {
+  position: relative;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #11261dd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  overflow: auto;
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.menu-card {
+  width: 410px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.badge {
+  font: 600 9px Space Grotesk, sans-serif;
+  letter-spacing: 2px;
+  color: #bdcf9e;
+}
+
+.menu-mark {
+  margin: 18px auto 12px;
+  border: 1px solid #65754c;
+  background: #3e5134;
+  color: #d4eaa9;
+  width: 44px;
+  height: 44px;
+  font-size: 32px;
+  border-radius: 9px;
+}
+
+.menu-card h2 {
+  font: 600 clamp(28px, 4vw, 48px) / 1.05 "Space Grotesk", sans-serif;
+  letter-spacing: -1.8px;
+  margin: 14px 0;
+}
+
+.menu-card h2 em {
+  font-style: normal;
+  color: #d3e9a5;
+}
+
+.menu-card p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #acbba2;
+}
+
+.menu-card > button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.primary {
+  background: #cce39e;
+  color: #213224;
+  border: 1px solid #cce39e;
+  font-weight: 700;
+}
+
+.primary:hover {
+  background: #e0efbe;
+}
+
+.primary span {
+  float: right;
+}
+
+.menu-card > .primary {
+  max-width: 290px;
+  margin: 20px auto 8px;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu-links button {
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  padding: 12px;
+}
+
+.menu-card > small {
+  display: block;
+  margin-top: 19px;
+  font-size: 8px;
+  color: #7e9378;
+  letter-spacing: 1.7px;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 20px;
+  font-size: 10px;
+  color: #b0bea1;
+  min-height: 43px;
+}
+
+.game-footer > span:first-child {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.game-footer > span:last-child {
+  white-space: nowrap;
+  font-size: 9px;
+}
+
+.game-footer b {
+  font-size: 8px;
+  color: #7f9379;
+  margin-left: 4px;
+  font-weight: 400;
+}
+
+.divider {
+  margin: 0 8px;
+  color: #566a50;
+}
+
+.mission {
+  padding: 21px 0 0;
+}
+
+.mission .eyebrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission .eyebrow span {
+  font-weight: 400;
+  color: #71856e;
+  letter-spacing: 0;
+}
+
+.mission h2 {
+  font: 500 27px Space Grotesk, sans-serif;
+  margin: 18px 0 10px;
+  letter-spacing: -1px;
+}
+
+.mission > p,
+.tip p {
+  color: #97a88e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.mission ol {
+  padding: 0;
+  list-style: none;
+  margin: 25px 0 27px;
+}
+
+.mission li {
+  display: flex;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.mission li > span {
+  border: 1px solid #48563c;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 25px;
+  font-size: 9px;
+  color: #c3d69c;
+}
+
+.mission h3 {
+  font-size: 12px;
+  margin: 2px 0 5px;
+  font-weight: 500;
+}
+
+.mission li p {
+  font-size: 11px;
+  color: #91a285;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.legend {
+  border-top: 1px solid #3c4b36;
+  padding: 23px 0;
+}
+
+.legend .eyebrow {
+  margin-bottom: 18px;
+  font-size: 9px;
+  color: #83977a;
+}
+
+.legend > div:not(:first-child) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 14px 0;
+  font-size: 11px;
+  color: #acbba0;
+}
+
+.symbol {
+  font-size: 17px;
+}
+
+.symbol.guard {
+  color: #c78c73;
+  margin-left: 22px;
+}
+
+.symbol.player {
+  color: #d2e8a4;
+}
+
+.symbol.key,
+.symbol.coin {
+  color: #e0bc64;
+}
+
+.symbol.coin {
+  margin-left: 18px;
+}
+
+.symbol.pack {
+  color: #c7dab3;
+}
+
+.legend small {
+  margin-left: auto;
+  color: #73876d;
+  font-size: 9px;
+}
+
+.tip {
+  padding: 16px;
+  background: #203329;
+  border-left: 2px solid #98b775;
+}
+
+.tip > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #c3d89f;
+}
+
+.tip p {
+  font-size: 11px;
+  margin: 8px 0 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #71866d;
+  font-size: 10px;
+  border-top: 1px solid #30432f;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+footer > span:last-child {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.instructions {
+  text-align: left;
+}
+
+.instructions p {
+  margin: 8px 0;
+}
+
+.final-score {
+  font: 500 36px Space Grotesk, sans-serif;
+  color: #d1e6a0;
+  margin: 15px;
+}
+
+.final-score small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #9dab8d;
+  margin: 5px;
+}
+
+label {
+  font-size: 11px;
+  color: #afbe9f;
+}
+
+.save-row {
+  display: flex;
+  gap: 8px;
+  margin: 9px 0;
+}
+
+.save-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+input {
+  background: #20362a;
+  color: #e5edd8;
+  border: 1px solid #657459;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.records {
+  max-height: 230px;
+  overflow: auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+.record-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 6px;
+  border-bottom: 1px solid #42543d;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.record-row input {
+  grid-column: 1 / 3;
+}
+
+.record-row span {
+  grid-column: 1;
+  font-size: 10px;
+  color: #b9cca5;
+}
+
+.record-row button {
+  padding: 6px;
+  font-size: 10px;
+}
+
+.record-row button[type="submit"] {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.record-row button[type="button"] {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+@media (min-width: 1400px) {
+  main {
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  aside {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+  }
+
+  .tip {
+    display: none;
+  }
+
+  .mission {
+    padding-top: 0;
+  }
+
+  .mission ol {
+    display: flex;
+    gap: 15px;
+  }
+
+  .mission li {
+    margin: 8px 0;
+  }
+
+  .mission li > span {
+    display: none;
+  }
+
+  .legend {
+    border: 0;
+    padding-top: 0;
+  }
+
+  .edition {
+    display: none;
+  }
+
+  .menu-card {
+    width: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 24px 12px 0;
+  }
+
+  .topbar {
+    padding: 0 15px;
+    height: 64px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .night {
+    display: none;
+  }
+
+  .hud {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .hud strong {
+    font-size: 20px;
+  }
+
+  .hud > div > span {
+    font-size: 7px;
+  }
+
+  .health-track {
+    width: 60px;
+  }
+
+  .game-footer > span:last-child {
+    display: none;
+  }
+
+  .canvas-wrap {
+    min-height: 420px;
+    background: #23392f;
+  }
+
+  .canvas-wrap canvas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .overlay {
+    padding: 15px;
+  }
+
+  .menu-card h2 {
+    font-size: 34px;
+  }
+
+  .menu-mark {
+    margin: 10px auto;
+  }
+
+  .menu-card > small {
+    margin-top: 8px;
+  }
+
+  aside {
+    display: block;
+  }
+
+  .mission ol {
+    display: block;
+  }
+
+  .legend {
+    display: none;
+  }
+
+  footer > span:last-child {
+    display: none;
+  }
+}
+
+.account-form {
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.account-form button {
+  margin-top: 8px;
+}
+
+.menu-card select {
+  width: 100%;
+  background: #20362a;
+  color: #e5edd8;
+  border: 1px solid #657459;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+  margin: 14px 0;
+}
+
+.history-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #42543d;
+  text-align: left;
+}
+
+.history-row p {
+  overflow-wrap: anywhere;
+  margin: 4px 0;
+}
+
+.history-row button {
+  padding: 6px 10px;
+  font-size: 11px;
+}
+
+.history-row select {
+  max-width: 180px;
+}
+
+.menu-card:has(.records),
+.menu-card:has(.account-form) {
+  width: 520px;
+}
+
+.overlay {
+  align-items: safe center;
+}
+
+.menu-card {
+  max-height: 100%;
+  overflow: auto;
+  padding: 10px;
+}
+
+.menu-card [hidden] {
+  display: none !important;
+}
+
+#panel-status,
+#save-status {
+  overflow-wrap: anywhere;
+}
+
+#stats {
+  margin-bottom: 12px;
+}
